@@ -1,6 +1,7 @@
 package org.dean.learn.guava.base;
 
 import com.google.common.collect.Lists;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,8 +11,10 @@ import java.util.List;
  */
 public class TestLists {
 
-    public static void main(String[] args) {
+    @Test
+    public void newArrayList() {
         List<Integer> integers = Lists.newArrayList(1, 2, 3, 4);
+
         for (Integer integer : integers) {
             System.out.println(integer);
         }
